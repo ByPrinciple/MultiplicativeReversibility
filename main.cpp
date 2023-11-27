@@ -49,7 +49,7 @@ int main(){
 		cout << "------------ number = " << n << " ------------------" << endl;
 
 		for(int b = 2; b < n; b++){
-			for(int k = 2; k <= n; k++){
+			for(int k = 2; k < b; k++){
 				vector<int> vec_rep = numInBase(n, b, {});
 				vector<int> vec_mult = numInBase(n*k, b, {});
 				vector<int> vec_rev = reverseVec(vec_rep);
